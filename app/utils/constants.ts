@@ -52,7 +52,26 @@ const PROVIDER_LIST: ProviderInfo[] = [
   },
   {
     name: 'OpenAILike',
-    staticModels: [],
+    staticModels: [
+      {
+        name: 'meta-llama/Llama-3.3-70B-Instruct',
+        label: 'meta-llama/Llama-3.3-70B-Instruct',
+        provider: 'OpenAILike',
+        maxTokenAllowed: 8000,
+      },
+      {
+        name: 'Qwen/Qwen2.5-Coder-32B-Instruct',
+        label: 'Qwen/Qwen2.5-Coder-32B-Instruct',
+        provider: 'OpenAILike',
+        maxTokenAllowed: 8000,
+      },
+      {
+        name: 'Qwen/QwQ-32B-Preview',
+        label: 'Qwen/QwQ-32B-Preview',
+        provider: 'OpenAILike',
+        maxTokenAllowed: 8000,
+      },
+    ],
     getDynamicModels: getOpenAILikeModels,
   },
   {

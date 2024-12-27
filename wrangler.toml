@@ -1,9 +1,0 @@
-name = "bolt-diy-worker"
-type = "javascript"
-account_id = "91d06794cbcaf7f6c8827add68ab3e36"
-workers_dev = true
-
-[build]
-command = "npm run build" # Adjust based on your project
-cwd = "./" # Directory for the build process
-upload_dir = "dist" # Adjust to the build output folder

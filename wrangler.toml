@@ -1,7 +1,9 @@
-name = "bolt-diy-worker" # Replace with your worker's name
-type = "javascript" # Change if you're using TypeScript or another language
+name = "bolt-diy-worker"
+type = "javascript"
+account_id = "91d06794cbcaf7f6c8827add68ab3e36"
+workers_dev = true
 
-account_id = "91d06794cbcaf7f6c8827add68ab3e36" # Replace with your Cloudflare account ID
-workers_dev = true # Set to false if using custom domains
-route = "" # Specify a route if needed
-zone_id = "" # Specify your zone ID if deploying to a custom domain
+[build]
+command = "npm run build" # Adjust based on your project
+cwd = "./" # Directory for the build process
+upload_dir = "dist" # Adjust to the build output folder

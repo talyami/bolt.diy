@@ -66,11 +66,17 @@ const PROVIDER_LIST: ProviderInfo[] = [
         maxTokenAllowed: 8000,
       },
       {
+        name: 'deepseek-ai/DeepSeek-V3',
+        label: 'deepseek-ai/DeepSeek-V3',
+        provider: 'OpenAILike',
+        maxTokenAllowed: 8000,
+      },
+      {
         name: 'Qwen/QwQ-32B-Preview',
         label: 'Qwen/QwQ-32B-Preview',
         provider: 'OpenAILike',
         maxTokenAllowed: 8000,
-      },
+      }
     ],
     getDynamicModels: getOpenAILikeModels,
   },
